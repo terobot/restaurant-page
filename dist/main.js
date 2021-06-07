@@ -1,1 +1,1 @@
-console.log("Some log message!");
+(()=>{"use strict";document.body.prepend((()=>{const e=document.createElement("header"),n=document.createElement("nav"),t=document.createElement("ul"),c=document.createElement("li"),m=document.createElement("li"),o=document.createElement("li");return c.innerHTML="Home",m.innerHTML="Menu",o.innerHTML="Contact",t.append(c,m,o),n.append(t),e.append(n),e})()),console.log("Some log message!")})();
