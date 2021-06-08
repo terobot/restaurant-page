@@ -1,5 +1,5 @@
-import header from './header'
+import firstPageLoad from './app'
 
-document.body.prepend(header())
+firstPageLoad()
 
 console.log('Some log message!')

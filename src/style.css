@@ -1,0 +1,26 @@
+.body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.navbar li {
+    float: left;
+    display: block;
+    color: seashell;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar li:hover {
+    background: seashell;
+    color: black;
+}
