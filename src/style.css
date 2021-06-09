@@ -1,25 +1,46 @@
-.body {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+body > * {
+    flex: 1 100%;
+}
+
+header {
+    height:fit-content;
+}
+
 .navbar {
+    height:fit-content;
     overflow: hidden;
     background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
   
 .navbar li {
-    float: left;
-    display: block;
+    display: flex;
+    width: fit-content;
     color: seashell;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    align-items: center;
+    font-size: 24px;
+    height: 60px;
 }
-  
+
 .navbar li:hover {
     background: seashell;
     color: black;

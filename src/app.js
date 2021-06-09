@@ -6,6 +6,7 @@ const firstPageLoad = () => {
     const containerEl = document.getElementById('content')
     containerEl.innerHTML = ''
     containerEl.append(home())
+    containerEl.classList.add('content')
 }
 
 export default firstPageLoad
