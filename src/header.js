@@ -20,7 +20,11 @@ const header = () => {
         homeEl.classList.add('clicked')
         menuEl.classList.remove('clicked')
         contactsEl.classList.remove('clicked')
+        homeEl.classList.remove('unclicked')
+        menuEl.classList.add('unclicked')
+        contactsEl.classList.add('unclicked')
     })
+    homeEl.classList.add('unclicked')
     menuEl.innerHTML = 'Menu'
     menuEl.setAttribute('id', 'menu')
     menuEl.addEventListener('click', () => {
@@ -30,7 +34,11 @@ const header = () => {
         homeEl.classList.remove('clicked')
         menuEl.classList.add('clicked')
         contactsEl.classList.remove('clicked')
+        homeEl.classList.add('unclicked')
+        menuEl.classList.remove('unclicked')
+        contactsEl.classList.add('unclicked')
     })
+    menuEl.classList.add('unclicked')
     contactsEl.innerHTML = 'Contacts'
     contactsEl.setAttribute('id', 'contacts')
     contactsEl.addEventListener('click', () => {
@@ -40,7 +48,11 @@ const header = () => {
         homeEl.classList.remove('clicked')
         menuEl.classList.remove('clicked')
         contactsEl.classList.add('clicked')
+        homeEl.classList.add('unclicked')
+        menuEl.classList.add('unclicked')
+        contactsEl.classList.remove('unclicked')
     })
+    contactsEl.classList.add('unclicked')
 
     listEl.append(homeEl, menuEl, contactsEl)
     navEl.append(listEl)
