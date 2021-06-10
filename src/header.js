@@ -17,6 +17,9 @@ const header = () => {
         const containerEl = document.getElementById('content')
         containerEl.innerHTML = ''
         containerEl.append(home())
+        homeEl.classList.add('clicked')
+        menuEl.classList.remove('clicked')
+        contactsEl.classList.remove('clicked')
     })
     menuEl.innerHTML = 'Menu'
     menuEl.setAttribute('id', 'menu')
@@ -24,6 +27,9 @@ const header = () => {
         const containerEl = document.getElementById('content')
         containerEl.innerHTML = ''
         containerEl.append(menu())
+        homeEl.classList.remove('clicked')
+        menuEl.classList.add('clicked')
+        contactsEl.classList.remove('clicked')
     })
     contactsEl.innerHTML = 'Contacts'
     contactsEl.setAttribute('id', 'contacts')
@@ -31,6 +37,9 @@ const header = () => {
         const containerEl = document.getElementById('content')
         containerEl.innerHTML = ''
         containerEl.append(contacts())
+        homeEl.classList.remove('clicked')
+        menuEl.classList.remove('clicked')
+        contactsEl.classList.add('clicked')
     })
 
     listEl.append(homeEl, menuEl, contactsEl)
