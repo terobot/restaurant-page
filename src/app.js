@@ -1,5 +1,6 @@
 import header from './header'
 import home from './home'
+import footer from './footer'
 
 const firstPageLoad = () => {
     document.body.prepend(header())
@@ -9,6 +10,7 @@ const firstPageLoad = () => {
     containerEl.append(home())
     containerEl.classList.add('content')
     homeEl.classList.add('clicked')
+    document.body.append(footer())
 }
 
 export default firstPageLoad
