@@ -5,12 +5,15 @@ import './style.css'
 
 const header = () => {
     const headerEl = document.createElement('header')
+    const logoEl = document.createElement('div')
     const navEl = document.createElement('nav')
     const listEl = document.createElement('ul')
     const homeEl = document.createElement('li')
     const menuEl = document.createElement('li')
     const contactsEl = document.createElement('li')
 
+    logoEl.classList.add('logo')
+    logoEl.innerHTML = 'Good Food Inc'
     homeEl.innerHTML = 'Home'
     homeEl.setAttribute('id', 'home')
     homeEl.addEventListener('click', () => {
@@ -57,7 +60,7 @@ const header = () => {
     listEl.append(homeEl, menuEl, contactsEl)
     navEl.append(listEl)
     navEl.classList.add('navbar')
-    headerEl.append(navEl)
+    headerEl.append(logoEl, navEl)
 
     return headerEl
 }
