@@ -57,8 +57,14 @@ header {
     font-size: 3vw;
 }
 
-.navbar li:hover {
-    font-weight: bold;
+@media(hover: hover) and (pointer: fine) {
+    .navbar li:hover {
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        border-top: dotted 1px seashell;
+        border-left: dotted 1px seashell;
+        border-right: dotted 1px seashell;
+    }  
 }
 
 .unclicked {
