@@ -112,7 +112,25 @@ header {
     padding-bottom: 20vw;
 }
 
-.about {
+.menu {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vw;
+    padding-bottom: 20vw;
+}
+
+.contacts {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vw;
+    padding-bottom: 20vw;
+}
+
+.container {
     height: fit-content;
     width: 60vw;
     border-radius: 0.5em;
