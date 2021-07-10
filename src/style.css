@@ -156,6 +156,14 @@ img {
     padding-bottom: 6vw;
 }
 
+a:link {
+    color: seashell;
+}
+
+a:visited {
+    color: seashell;
+}
+
 .footer {
     position: fixed; 
     bottom: 0;
